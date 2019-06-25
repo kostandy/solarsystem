@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Solar System</title>
+  <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <a-scene>
+    <a-assets>
+      <img src="models_8k/sun.jpeg" id="sun" alt="The Sun" />
+      <img src="models_2k/mercury.jpg" id="mercury"
+        alt="The Mercury" />
+      <img src="models_2k/venus.jpg" id="venus" alt="The Venus" />
+      <img src="models_2k/earth.jpg" id="earth" alt="The Earth" />
+      <img src="models_2k/mars.jpg" id="mars" alt="The Mars" />
+      <img src="models_8k/jupiter.jpg" id="jupiter"
+        alt="The Jupiter" />
+      <img src="models_8k/saturn.jpg" id="saturn"
+        alt="The Saturn" />
+      <img src="models_8k/neptune.jpg" id="neptune"
+        alt="The Neptune" />
+      <img src="models_8k/uranus.jpg" id="uranus"
+        alt="The Uranus" />
+    </a-assets>
+
+    <a-camera position="0 0 500"></a-camera>
+
+    <a-sky src="models_2k/space.jpg">
+      <a-animation attribute="rotation" dur="52222" from="0 0 0" to="0 360 0"
+        repeat="indefinite" delay="0" easing="linear"></a-animation>
+    </a-sky>
+  </a-scene>
+</body>
+
+</html>
